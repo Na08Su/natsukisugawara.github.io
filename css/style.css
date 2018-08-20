@@ -1,0 +1,101 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+  text-decoration: none !important;
+  color: white;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: #8297ad7d;
+}
+
+/* PC */
+video#mp4 {
+  display: block;
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+/* タイトル */
+.pc {
+  font-size: 90px !important;
+  font-weight: bold !important;
+  color: white;
+  margin-left: 50px;
+  margin-top:  90px;
+  line-height: 60px;
+}
+
+/* PR告知ブロック */
+.pr-box {
+  background: rgba(0,0,0,0.6);
+  width: 475px;
+  height: 250px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  float: left;
+}
+#left {
+  background-image: url(http://thestrokes.com/img/square200.jpg);
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 15px;
+}
+
+#right {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 23px;
+    width: 218px;
+    vertical-align: top;
+    color: #fff !important;
+    /* text-decoration: none !important; */
+    text-align: center;
+}
+
+/* menuブロック */
+.menu-box {
+  /* float: right; */
+}
+ul#topmenu {
+  list-style: none;
+  list-style-type: none;
+  color: white;
+  width: 277px;
+  /* margin: 0 auto; */
+  /* float: right; */
+  font-size: 39px;
+  width: 375px;
+  /* height: 200px; */
+  margin-top: 45px;
+  margin-left: 33px;
+  margin-bottom: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+ul#topmenu li {
+  text-align: center;
+  font-size: 25px;
+  /* font-family: 'Alegreya Sans SC', sans-serif; */
+  /* font-family: 'Oswald', sans-serif; */
+
+  /* font-family: 'Amatic SC', cursive; */
+  font-weight: bold;
+}
+
+
+/* スマホ用CSS */
