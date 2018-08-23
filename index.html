@@ -3,14 +3,22 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <link href="css/style.css" rel="stylesheet">
 
 
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/slidebars.css"> -->
+    <!-- <link rel="stylesheet" href="css/test.css"> -->
+    <!-- <link href="css/pure-drawer.min.css" rel="stylesheet" > -->
 
 
     <title>ADHOC ALCOHOLIC</title>
@@ -19,37 +27,33 @@
       document.createElement('video');
     </script>
     <!&#91;endif&#93;-->
-
-    <style>
-      video { display: block; }
-    </style>
   </head>
   <body>
     <!-- 動画背景参考 https://kigiroku.com/frontend/bgMovie.html -->
-    <video playsinline="playsinline" poster="mp4/img1.jpg" autoplay="autoplay" muted="muted" loop="loop" id="mp4">
+    <video id="mp4" class="pc" playsinline="playsinline" poster="mp4/img1.jpg" autoplay="autoplay" muted="muted" loop="loop" >
       <!-- 動画背景 -->
       <source src="mp4/sozai.mp4" type="video/mp4">
     </video>
 
     <!-- titleブロック -->
-    <div class="overlay-title">
-      <h1 class="pc col-xs-1 col-sm-3">ADHOC ALCOHOLIC</h1>
+    <div class="overlay-title pc">
+      <h1 class="pc-title col-xs-1 col-sm-3">ADHOC ALCOHOLIC</h1>
       <!-- <h5 class="smt">ADHOC ALCOHOLIC</h5> -->
     </div>
 
     <!-- 右下のメニューブロック -->
-    <div class="menu-box">
+    <div class="menu-box pc">
       <ul id="topmenu">
-        <li>BIOGRAPHY</li>
-        <li>NEWS</li>
-        <li>YOUTUBE</li>
-        <li>SOUNDCLOUD</li>
-        <li>PHOTOS</li>
+        <li><a href="#biography">BIOGRAPHY</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#youtube">YOUTUBE</a></li>
+        <li><a href="#soundcloud">SOUNDCLOUD</a></li>
+        <li><a href="#photos">PHOTOS</a></li>
       </ul>
     </div>
 
     <!-- 透明背景の告知ブロック -->
-    <div class="pr-box">
+    <div class="pr-box pc">
       <div id="left">
 
       </div>
@@ -60,10 +64,89 @@
 
 
 
+
+    <!-- スマホ用HTML -->
+
+    <!-- 背景 -->
+    <div class="smt background-img">
+      <!-- <div class="pattern1">
+        <img src="css/logo.jpg" alt="">
+      </div> -->
+
+
+      <div class="transparent">
+        <div class="top-pr">
+          <div class="left-top">
+
+          </div>
+          <div class="right-top smt">
+            <a href="http://www.cultrecords.com/" target="blank"> <待望>前世の人々が熱狂したバンド復活<hr>check it !</a>
+          </div>
+
+        </div>
+
+
+        <!-- ハンバーガー -->
+        <!-- https://www.adchsm.com/slidebars/help/usage/adding-off-canvas-slidebars/ -->
+        <div class="menu-collapsed">
+          <div class="bar" id="nav-drawer"></div>
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+              <li><a href="#acac-news">NEWS</a></li>
+              <li><a href="#acac-shows">SHOWS</a></li>
+              <li><a href="#acac-videos">VIDEOS</a></li>
+              <li><a href="#acac-discography">DISCOGRAPHY</a></li>
+              <li><a href="#acac-photos">PHOTOS</a></li>
+              <li class="icons">
+                <a href="https://www.youtube.com/watch?v=pNfHoPIxhXM" target="_blank">
+                  <i class="fab fa-youtube fa-lg"></i></a>
+                <a href="https://twitter.com/OfMontrealNews" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.instagram.com/1000bero_net/?hl=ja" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://soundcloud.com/yakenohara/yim7" target="_blank"><i class="fab fa-soundcloud fa-lg"></i></a>
+                <a href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V" target="_blank"><i class="fab fa-spotify fa-lg"></i></a>
+              </li>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- <div class="menu-collapsed">
+          <div class="bar"></div>
+          <nav>
+            <ul>
+              <li><a href="#strokes-news">NEWS</a></li>
+              <li><a href="#strokes-shows">SHOWS</a></li>
+              <li><a href="#strokes-videos">VIDEOS</a></li>
+              <li><a href="#strokes-discography">DISCOGRAPHY</a></li>
+              <li><a href="#strokes-photos">PHOTOS</a></li>
+              <li class="icons"><a href="https://www.facebook.com/thestrokes" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/thestrokes" target="_blank"><i class="fa fa-twitter"></i></a><a href="http://instagram.com/thestrokes" target="_blank"><i class="fa fa-instagram"></i></a><a href="http://www.vevo.com/artist/the-strokes" target="_blank"><i class="fa fa-youtube-play"></i></a><a href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V" target="_blank"><i class="fa fa-spotify"></i></a></li>
+            </ul>
+          </nav>
+        </div> -->
+
+
+        <h1 class="smt-title">
+          ADHOC<br>ALCOHOLIC
+          <!-- ADHOC ADHOLIC -->
+        </h1>
+      </div>
+    </div>
+
+    <!-- topの告知バー -->
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 </html>
