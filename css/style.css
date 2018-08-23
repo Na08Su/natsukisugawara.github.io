@@ -281,6 +281,7 @@
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
     font-weight: normal;
+    font-family: 'AvenirNextCondensed-Bold';
 }
 
   /*チェックが入ったらもろもろ表示*/
