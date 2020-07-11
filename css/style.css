@@ -55,7 +55,7 @@
     float: left;
   }
   #left {
-    background-image: url(http://thestrokes.com/img/square200.jpg);
+    background-image: url(strokes_image.jpg);
     width: 200px;
     height: 200px;
     display: inline-block;
